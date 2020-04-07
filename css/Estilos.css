@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+        font-family: 'Gotu';
+}
+
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.titulo{
+     color: black;
+     font-size: 30px;
+     text-align:center;
+     margin-bottom: 60px;
+}
+
+/*Header*/
+
+header{
+     width:100%;
+     height: 650px;
+     background: #bdc3c7;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, hsla(210, 29%, 24%, 0.644), hsla(204, 8%, 76%, 0.644)), url(../Sites/img/Portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, hsla(210, 29%, 24%, 0.644), hsla(204, 8%, 76%, 0.644)), url(../Sites/img/Portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     background-size: cover;
+     background-attachment: fixed;
+     position: relative;
+}   
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: azure;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 45px;
+    color: azure;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: azure;
+}
+
+
+.ola{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* Sobre mi*/
+main .sobre-mi{
+    padding: 30px 0 60px 0;
+}
+
+.contenedor-sobre-mi{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-sobremi{
+    width: 40%;
+}
+
+.contenedor-sobre-mi .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background-color: darkgray;
+    color: azure;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+    margin-right: 7px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+/* Galeria*/
+.portafolio{
+    background-color: whitesmoke;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly; /* */
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;  /* Se coge una anchura de la imagen del 24% */
+    height: 220px; /* Las imagenes tienen una altura de 220px */
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5) ;
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Hace que las imagenes se comporten como bloques, Display sirve para controlar la forma de las estructuras */
+}
+
+.hover-galeria{
+    position: absolute;  /* Para posicionar la imagen donde queramos */
+    width: 100%;         /* La imagen ocupa la totalidad de la galeria */
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(212, 93%, 29%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: white;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform:scale(1); /* Poner animacion al pasar por la imagen */
+}
+
+/* footer */
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;  /* 60px arriba, 0 a la derecha, 30px abajo y 0 a la izquierda*/
+    margin: auto;  /* Centrar todo*/
+    overflow: hidden; /* Para que nada se salga del footer */
+}
+
+.contenedor-footer{
+    display: flex; /* Hace que los textos se pongan en una sola linea */
+    width: 90%;
+    justify-content: space-evenly; /* Para que se repartan los elementos equitativamente */
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #ffffff;
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo h4 > a{
+    color: #ffffff;
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.content-foo h4 > a:hover{
+    text-decoration: underline;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-mi{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-mi .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-sobremi{
+        width: 90%;
+    }
+
+    .imagen-port{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30 px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    .imagen-sobremi{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-mi .contenido-textos{
+        width: 95%;
+   }
+
+   .imagen-port{
+       width: 95%;
+    }
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
