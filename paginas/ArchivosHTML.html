@@ -6,13 +6,14 @@
     <meta name="author" content="JHC" />
     <link rel="stylesheet" href="../css/Estilos.css">
     <link rel="shortcut icon" href="../img/logo-fav.png " type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
 
-        <nav>
+        <nav class="animated bounceInLeft delay-0.95s">
             <a href="../inicio.html">Inicio</a>
 
             <a href="ArchivosJava.html">JAVA</a>
@@ -24,7 +25,7 @@
             <a href="Contacto.html">Contacto</a>
         </nav>
         <section class="textos-header">
-            <h1>Proyectos HTML</h1>
+            <h1 class="animated fadeInDown delay-0.5s">Proyectos HTML</h1>
         </section>
         <div class="ola" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
@@ -34,23 +35,30 @@
     </header>
 
     <footer>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <h4>Telefono</h4>
-                <p>+34 608932126</p>
-            </div>
-            <div class="content-foo">
-                <p><a href="mailto:jhernandezcarmona@hotmail.com">
-                        <h4>Correo</h4>
-                    </a>Mi Correo Personal</p>
-            </div>
-            <div class="content-foo">
-                <p><a href="https://www.instagram.com/jaime_hernandezc/?hl=es">
-                        <h4>Instagram</h4>
-                    </a>Mi Instagram</p>
-            </div>
+    <div class="contenedor-footer">
+        <div class="content-foo">
+            <p><a href="tel:+34608932126">
+                    <img src="../img/tlf.png" alt="">
+                </a>
+                <p>Mi Correo Personal</p>
+            </p>
         </div>
-        <h2 class="titulo-final">&copy; JHC Design</h2>
+        <div class="content-foo">
+            <p><a href="mailto:jhernandezcarmona@hotmail.com">
+                    <img src="../img/Correo.png" alt="">
+                </a>
+                <p>Mi Correo Personal</p>
+            </p>
+        </div>
+        <div class="content-foo">
+            <p><a href="https://www.instagram.com/jaime_hernandezc/?hl=es">
+                    <img src="../img/insta.png" alt="">
+                </a>
+                <p>Instagram</p>
+            </p>
+        </div>
+    </div>
+    <h2 class="titulo-final">&copy; JHC Design</h2>
     </footer>
 </body>
 
